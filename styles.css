@@ -1,0 +1,189 @@
+/* Estilo Geral */
+body {
+    font-family: '𝐟𝐚𝐧𝐜𝐲 𝐭𝐞𝐱𝐭', 𝐟𝐚𝐧𝐜𝐲 𝐭𝐞𝐱𝐭;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1919a0, #005BB5);
+    color: #ffffff;
+}
+
+/* Logo no Cabeçalho */
+.logo {
+    width: 60px; /* Tamanho ajustável conforme necessário */
+    height: auto;
+    margin-right: 20px; /* Espaço entre o logo e o título */
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+
+/* Estilos do Cabeçalho */
+.cabeçalho {
+    background: linear-gradient(90deg, #1919a0, #005BB5);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container__titulo {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+
+.lista-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.lista-menu__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.lista-menu__link:hover {
+    color: #0a0a3b;
+    background-color: white;
+}
+
+/* Seções de Conteúdo */
+  .carrossel,.video-section, .rodapé{
+    margin: 10px auto;
+    padding: 50px;
+    background: linear-gradient(90deg, #dcf2ff, #98b9db);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: '𝐟𝐚𝐧𝐜𝐲 𝐭𝐞𝐱𝐭', 𝐟𝐚𝐧𝐜𝐲 𝐭𝐞𝐱𝐭;
+    color: #0a0a3b;
+}
+.banner, .flashcards   {
+    margin: 20px auto;
+    padding: 40px;
+    
+
+}
+
+
+/* Flashcards */
+.card-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.card-front {
+    background-color: #98b9db;
+    color: #0a0a3b;
+   
+    
+}
+
+.card-back {
+    background-color: #0a0a3b;
+    color: white;
+    transform: rotateY(180deg);
+    margin: 10px auto;
+    padding: 30px;
+    
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(360deg);
+}
+
+/* Imagem na Conclusão */
+.conclusao-imagem {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.conclusao-imagem:hover {
+    transform: scale(1.5);
+}
+
+/* Rodapé */
+.rodapé {
+    background: #176ec6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Botão Voltar ao Topo */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #0a0a3b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top:hover {
+    background: #2929ca;
+}
+
+
+/* Ajustar o tamanho das imagens do carrossel para um tamanho fixo */
+.swiper-slide img {
+    width: 100%; /* Garantir que as imagens preencham a largura do slide */
+    height: 450px; /* Definir uma altura fixa para as imagens */
+    object-fit: cover; /* Assegurar que a imagem preencha a área sem distorcer */
+    border-radius: 10px; /* Adicionar borda arredondada para um estilo mais suave */
+}
+
+/* Estilos do Swiper */
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+/* Vídeo */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0a0a3b;
+}
